@@ -27,6 +27,7 @@ public class Program
     Car yugo = new Car("1980 Yugo Koral", 700, 56000);
     Car ford = new Car("1988 Ford Country Squire", 1400, 239001);
     Car amc = new Car("1976 AMC Pacer", 400, 198000);
+    Car mazda = new Car("2002 Mazda 626", 2000, 110000);
 
     List<Car> Cars = new List<Car>() {volkswagen, yugo, ford, amc};
 
