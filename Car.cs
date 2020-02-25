@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Car 
 {
   public string MakeModel;
-  public int Prices;
+  public int Price;
   public int Miles;
 }
 public class Program
