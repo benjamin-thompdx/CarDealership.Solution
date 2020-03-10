@@ -20,10 +20,23 @@ namespace CarDealership.Controllers
       return View();
     }
 
+    [HttpGet ("/cars/priceForm")]
+    public ActionResult PriceForm()
+    {
+      return View();
+    }
+
     [HttpPost("/cars")]
     public ActionResult Create(string makeModel, int price, int miles, string description)
     {
       Car myCar = new Car(makeModel, price, miles, description);
+      return RedirectToAction("Index");
+    }
+
+    [HttpPost("/cars/byPrice")]
+    public ActionResult Create(int searchPrice)
+    {
+  
       return RedirectToAction("Index");
     }
   }

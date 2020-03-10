@@ -4,10 +4,10 @@ namespace CarDealership.Models
 {
   public class Car 
   {
-    public static string MakeModel { get; set; }
-    public static int Price {get; set; }
-    public static int Miles {get; set; }
-    public static string Description {get; set; }
+    public string MakeModel { get; set; }
+    public int Price {get; set; }
+    public int Miles {get; set; }
+    public string Description {get; set; }
     private static List<Car> _newCar = new List<Car>{};
 
     public Car(string makeModel, int price, int miles, string description)
